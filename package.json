@@ -1,40 +1,26 @@
 {
-  "name": "php-hostinger-mcp-server",
-  "version": "0.1.0",
-  "description": "Servidor MCP especializado para desenvolvimento PHP em hospedagem compartilhada com foco em sites e lojas online",
-  "main": "index.js",
+  "name": "php-hosting-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server para gerenciar sites PHP em ambientes compartilhados como Hostinger",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "jest",
-    "lint": "eslint ."
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "mcp",
-    "server",
     "php",
     "hostinger",
-    "webshop",
-    "ecommerce",
-    "hosting"
+    "shared-hosting",
+    "e-commerce"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@anthropic-ai/mcp-core": "^1.0.0",
+    "@anthropic-ai/sdk": "^0.11.0",
     "express": "^4.18.2",
-    "basic-ftp": "^5.0.3",
-    "mysql2": "^3.6.1",
-    "sharp": "^0.32.5",
-    "winston": "^3.10.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1",
-    "jest": "^29.7.0",
-    "eslint": "^8.49.0"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  }
+  "type": "module"
 }
